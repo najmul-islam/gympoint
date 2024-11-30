@@ -7,7 +7,7 @@ The Gym Class Scheduling and Membership Management System is a web application d
 
 ## **Live Links**
 - **Frontend**: [Deployed Frontend Link](https://gympoint.vercel.app/)
-- **Backend**: [Deployed Backend Link]([#](https://gympoint.onrender.com/))
+- **Backend**: [Deployed Backend Link](https://gympoint.onrender.com/)
 
 ---
 
