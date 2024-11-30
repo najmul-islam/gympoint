@@ -1,0 +1,44 @@
+# dependencies
+node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js (frontend)
+frontend/.next/
+frontend/out/
+
+# production (frontend and backend)
+frontend/build
+backend/build
+backend/dist
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel (frontend)
+frontend/.vercel
+frontend/node_modules
+
+# typescript (frontend and backend)
+*.tsbuildinfo
+next-env.d.ts
+
+# backend (Node.js or similar)
+backend/node_modules
