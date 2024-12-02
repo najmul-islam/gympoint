@@ -1,4 +1,4 @@
-import BlogSection from "@/components/home/blogSection";
+import BlogSection from "@/components/home/BlogSection";
 import EventSection from "@/components/home/EventSection";
 import HeroSection from "@/components/home/HeroSection";
 import IntroSection from "@/components/home/IntroSection";
