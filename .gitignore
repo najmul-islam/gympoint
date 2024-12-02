@@ -35,6 +35,7 @@ yarn-error.log*
 # vercel (frontend)
 frontend/.vercel
 frontend/node_modules
+frontend/notes.txt
 
 # typescript (frontend and backend)
 *.tsbuildinfo
@@ -42,3 +43,5 @@ next-env.d.ts
 
 # backend (Node.js or similar)
 backend/node_modules
+data.json
+backend/public/images/class
