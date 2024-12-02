@@ -146,3 +146,63 @@ The Gym Class Scheduling and Membership Management System is a web application d
 - Delete a schedule.
 
 ---
+
+## **Setup Instructions**
+
+### **Backend**
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file with the following:
+   ```
+   PORT=5000
+   DB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/<dbname>
+   JWT_SECRET=your_jwt_secret
+   ```
+4. Run the server locally:
+   ```bash
+   npm start
+   ```
+5. Deploy to Render/Heroku.
+
+### **Frontend**
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env.local` file:
+   ```
+   NEXT_PUBLIC_API_URL=<backend-url>
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Deploy to Vercel.
+
+---
+## **Admin Credentials**
+- **Email**: `admin@gmail.com`
+- **Password**: `123456`
+
+---
+
+## **Testing Instructions**
+1. Log in using the provided admin credentials.
+2. Navigate to the Admin Dashboard.
+3. Test:
+   - Adding, editing, and deleting trainers.
+   - Creating, updating, and deleting class schedules.
+   - Booking classes as a trainee (ensure limits are enforced).
+4. View schedules on the Trainer Dashboard.
