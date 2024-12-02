@@ -6,9 +6,11 @@ import { useLayoutEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useSelector } from "react-redux";
 import { toast } from "sonner";
+import { useProfileQuery } from "@/features/user/userApi";
 
 const Login = () => {
   const user = useSelector((state) => state.auth.user);
+  const { data: profile } = useProfileQuery();
   const router = useRouter();
 
   const [login, { isError, isSuccess, error }] = useLoginMutation();
@@ -25,7 +27,7 @@ const Login = () => {
 
   useLayoutEffect(() => {
     if (user) {
-      router.push("/profile");
+      router.push(`/${profile?.role}`);
     }
 
     if (isError) {
