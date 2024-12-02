@@ -6,12 +6,27 @@
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
-  "keywords": [],
+  "keywords": [
+    "gym management",
+    "fitness backend",
+    "gympoint API",
+    "health tracker",
+    "workout scheduler"
+  ],
   "author": "najmul-islam <najmulislam519@gmail.com> (https://najmulislam.vercel.app/)",
   "license": "ISC",
-  "description": "",
+  "description": "A backend API for managing gym memberships, classes, and fitness schedules with secure authentication and data management.",
   "dependencies": {
+    "bcrypt": "^5.1.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
