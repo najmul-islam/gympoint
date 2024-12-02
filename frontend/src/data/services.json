@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Cardio Program",
+    "description": "Separated they live in Bookmarksgrove right at the coast of the Semantics.",
+    "thumbnail": "/service/service-1.png"
+  },
+  {
+    "id": "2",
+    "title": "Strength Training",
+    "description": "Targeted workouts for building muscle strength and endurance.",
+    "thumbnail": "/service/service-2.png"
+  },
+  {
+    "id": "3",
+    "title": "Flexibility Training",
+    "description": "Stretching exercises to improve mobility and range of motion.",
+    "thumbnail": "/service/service-3.png"
+  },
+  {
+    "id": "4",
+    "title": "HIIT Program",
+    "description": "High-intensity interval training to burn fat and increase stamina.",
+    "thumbnail": "/service/service-4.png"
+  }
+]

@@ -1,6 +1,4 @@
 "use client";
-import DashboardSidebar from "@/components/sidebar/DashboardSidebar";
-import { SidebarProvider } from "@/components/ui/sidebar";
 import { useProfileQuery } from "@/features/user/userApi";
 import { useRouter } from "next/navigation";
 import { useLayoutEffect } from "react";

@@ -4,10 +4,7 @@ const Class = require("./class.model");
 const getAllClass = asyncHandler(async (req, res) => {
   const classes = await Class.find({});
 
-  res.status(200).json({
-    success: true,
-    data: classes,
-  });
+  res.status(200).json(classes);
 });
 
 const getSingleClass = asyncHandler(async (req, res) => {
@@ -20,10 +17,7 @@ const getSingleClass = asyncHandler(async (req, res) => {
     throw new Error("Class not found");
   }
 
-  res.status(200).json({
-    success: true,
-    data: foundClass,
-  });
+  res.status(200).json(foundClass);
 });
 
 const createClass = asyncHandler(async (req, res) => {

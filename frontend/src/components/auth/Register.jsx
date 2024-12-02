@@ -1,5 +1,6 @@
 "use client";
 import { useRegisterMutation } from "@/features/auth/authApi";
+import { useProfileQuery } from "@/features/user/userApi";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useLayoutEffect } from "react";
@@ -9,6 +10,7 @@ import { toast } from "sonner";
 
 const Register = () => {
   const user = useSelector((state) => state.auth.user);
+  const { data: profile } = useProfileQuery();
   const router = useRouter();
   const [registerUser, { isError, isSuccess, error }] = useRegisterMutation();
   const {
@@ -23,7 +25,7 @@ const Register = () => {
 
   useLayoutEffect(() => {
     if (user) {
-      router.push("/profile");
+      router.push(`/${profile?.role}`);
     }
 
     if (isError) {

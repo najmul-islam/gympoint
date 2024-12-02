@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "title": "Body Building",
+    "description": "Build strength and muscle with focused resistance training.",
+    "thumbnail": "/intro/intro-img-1.jpg",
+    "price": "$25.00"
+  },
+  {
+    "id": "2",
+    "title": "Yoga Program",
+    "description": "Enhance flexibility, strength, and mindfulness through yoga practice.",
+    "thumbnail": "/intro/intro-img-2.jpg",
+    "price": "$30.00"
+  },
+  {
+    "id": "3",
+    "title": "Aerobics Classes",
+    "description": "Fun, energetic routines to improve cardiovascular health and endurance.",
+    "thumbnail": "/intro/intro-img-3.jpg",
+    "price": "$20.00"
+  },
+  {
+    "id": "4",
+    "title": "Pilates Training",
+    "description": "Low-impact exercises for core strength and body conditioning.",
+    "thumbnail": "/intro/intro-img-4.jpg",
+    "price": "$35.00"
+  }
+]
