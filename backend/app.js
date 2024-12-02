@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/user", require("./modules/user/user.route"));
 app.use("/api/classes", require("./modules/class/class.route"));
 app.use("/api/trainer", require("./modules/trainer/trainer.route"));
+app.use("/api/schedule", require("./modules/schedule/schedule.route"));
 app.use("/api/booking", require("./modules/booking/booking.route"));
 
 app.get("/", (req, res) => {
@@ -22,7 +23,20 @@ app.get("/", (req, res) => {
   });
 });
 
+// error middleware
+app.use(require("./middlewares/notfound.middleware"));
+app.use(require("./middlewares/error.middleware"));
+
+const start = async () => {
+  try {
+    await database(process.env.MONGO_URI);
 app.listen(
   process.env.PORT,
-  console.log(`app is listening port ${process.env.PORT}`)
+  console.log(`app is listening port ${process.env.PORT}...`.blue.underline)
 );
+} catch (error) {
+    console.log(error);
+  }
+};
+
+start();
