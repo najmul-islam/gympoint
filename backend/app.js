@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 // routes
 app.use("/api/user", require("./modules/user/user.route"));
 app.use("/api/classes", require("./modules/class/class.route"));
+app.use("/api/trainer", require("./modules/trainer/trainer.route"));
 
 app.get("/", (req, res) => {
   res.status(200).json({
