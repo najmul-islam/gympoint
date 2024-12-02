@@ -30,11 +30,11 @@ app.use(require("./middlewares/error.middleware"));
 const start = async () => {
   try {
     await database(process.env.MONGO_URI);
-app.listen(
-  process.env.PORT,
-  console.log(`app is listening port ${process.env.PORT}...`.blue.underline)
-);
-} catch (error) {
+    app.listen(
+      process.env.PORT,
+      console.log(`app is listening port ${process.env.PORT}...`.blue.underline)
+    );
+  } catch (error) {
     console.log(error);
   }
 };
